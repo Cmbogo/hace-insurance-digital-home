@@ -58,8 +58,8 @@ const About = () => {
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
-              About <span className="text-corporate">Hace Insurance</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-corporate mb-6">
+              About Hace Insurance
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Leading the future of insurance consultancy in Kenya and across East Africa 
