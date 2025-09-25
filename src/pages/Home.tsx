@@ -49,7 +49,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
-              <span className="text-corporate">Insure Now</span> To Be Sure
+              <span className="text-blue-600">Insure Now To Be Sure</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Premier insurance consultancy firm delivering tailored solutions in Health Insurance, 
