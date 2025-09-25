@@ -48,7 +48,7 @@ const Services = () => {
     },
     {
       icon: Briefcase,
-      title: 'Employer\'s Liability',
+      title: "Employer's Liability",
       description: 'Coverage for workplace injuries and employer responsibilities under labor laws.'
     },
     {
@@ -71,7 +71,7 @@ const Services = () => {
     },
     {
       icon: Building,
-      title: 'Contractor\'s All Risks',
+      title: "Contractor's All Risks",
       description: 'Comprehensive coverage for construction projects and contractor operations.'
     },
     {
