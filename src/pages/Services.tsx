@@ -148,7 +148,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
-              Our <span className="text-corporate">Insurance Services</span>
+              <span className="text-corporate">Our Insurance Services</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive insurance solutions tailored to meet your personal and business needs, 
