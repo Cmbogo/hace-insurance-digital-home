@@ -19,7 +19,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-background border-b border-border shadow-sm">
+    <nav style={{ backgroundColor: '#d9d9d9' }} className="border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Mobile menu button - LEFT SIDE */}

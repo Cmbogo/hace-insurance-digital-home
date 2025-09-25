@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold text-lg mb-4" style={{ color: '#FFD700' }}>Services</h3>
+            <h3 className="font-extrabold text-lg mb-4" style={{ color: '#FFD700' }}>Services</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/services" className="hover:text-opacity-80 transition-colors">Health Insurance</Link></li>
               <li><Link to="/services" className="hover:text-opacity-80 transition-colors">General Insurance</Link></li>
@@ -41,7 +41,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4" style={{ color: '#FFD700' }}>Quick Links</h3>
+            <h3 className="font-extrabold text-lg mb-4" style={{ color: '#FFD700' }}>Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="hover:text-opacity-80 transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-opacity-80 transition-colors">About Us</Link></li>
@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4" style={{ color: '#FFD700' }}>Contact Info</h3>
+            <h3 className="font-extrabold text-lg mb-4" style={{ color: '#FFD700' }}>Contact Info</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-start space-x-2">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />

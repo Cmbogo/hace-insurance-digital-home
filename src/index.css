@@ -11,11 +11,11 @@
     --foreground: 0 0% 15%;
     
     /* Logo Blue - Primary Brand Color */
-    --primary: 225 100% 55%;
+    --primary: 224 78% 56%;
     --primary-foreground: 0 0% 100%;
     
     /* Deep Blue - Corporate */
-    --corporate: 225 100% 20%;
+    --corporate: 224 78% 56%;
     --corporate-foreground: 0 0% 100%;
     
     /* Gold Accent */
@@ -37,7 +37,7 @@
     
     --border: 225 10% 90%;
     --input: 225 10% 90%;
-    --ring: 225 100% 55%;
+    --ring: 224 78% 56%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
