@@ -19,7 +19,7 @@ const Contact = () => {
 
   const services = [
     'Health Insurance',
-    'General Insurance', 
+    'General Insurance',
     'Life Assurance',
     'Pensions',
     'Motor Insurance',
@@ -29,7 +29,9 @@ const Contact = () => {
     'Other'
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -41,17 +43,15 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      // In a real app, you would send this data to your backend
+      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for contacting us. We'll get back to you within 24 hours.",
       });
-      
-      // Reset form
+
       setFormData({
         name: '',
         email: '',
@@ -87,15 +87,14 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Information */}
+      {/* Contact Form & Info */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-heading mb-8">
-                Request a Quote
-              </h2>
+              <h2 className="text-3xl font-bold text-heading mb-8">Request a Quote</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -127,7 +126,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
@@ -162,7 +161,7 @@ const Contact = () => {
                     </select>
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                     Message *
@@ -177,12 +176,8 @@ const Contact = () => {
                     placeholder="Tell us about your insurance needs..."
                   />
                 </div>
-                
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="btn-corporate w-full md:w-auto"
-                >
+
+                <Button type="submit" disabled={isSubmitting} className="btn-corporate w-full md:w-auto">
                   {isSubmitting ? (
                     'Sending...'
                   ) : (
@@ -195,13 +190,11 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Contact Information */}
+            {/* Contact Details */}
             <div>
-              <h2 className="text-3xl font-bold text-heading mb-8">
-                Get in Touch
-              </h2>
-              
+              <h2 className="text-3xl font-bold text-heading mb-8">Get in Touch</h2>
               <div className="space-y-8">
+                
                 <div className="card-elegant p-6">
                   <h3 className="text-xl font-bold text-heading mb-4">Contact Details</h3>
                   <div className="space-y-4">
@@ -214,7 +207,6 @@ const Contact = () => {
                         </a>
                       </div>
                     </div>
-                    
                     <div className="flex items-center space-x-3">
                       <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
@@ -224,7 +216,6 @@ const Contact = () => {
                         </a>
                       </div>
                     </div>
-                    
                     <div className="flex items-start space-x-3">
                       <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <div>
@@ -235,14 +226,13 @@ const Contact = () => {
                         </div>
                       </div>
                     </div>
-                    
                     <div className="flex items-center space-x-3">
                       <Clock className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
                         <p className="font-medium">Business Hours</p>
                         <p className="text-sm text-muted-foreground">
-                          Monday - Friday: 8:00 AM - 5:00 PM<br />
-                          Saturday: 9:00 AM - 1:00 PM
+                          Mon – Fri: 8:00 AM – 5:00 PM<br />
+                          Sat: 9:00 AM – 1:00 PM
                         </p>
                       </div>
                     </div>
@@ -267,6 +257,7 @@ const Contact = () => {
                     ))}
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -283,8 +274,8 @@ const Contact = () => {
             For urgent claims or emergency assistance, contact us immediately. 
             Our team is ready to help when you need us most.
           </p>
-          <a 
-            href="tel:+254791623183" 
+          <a
+            href="tel:+254791623183"
             className="bg-white text-corporate hover:bg-white/90 transition-all duration-300 font-medium px-8 py-4 rounded-md inline-flex items-center text-lg"
           >
             <Phone className="mr-3 h-6 w-6" />
