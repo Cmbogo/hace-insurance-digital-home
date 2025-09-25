@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Download } from 'lucide-react';
 import Layout from '../components/Layout';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -235,6 +235,16 @@ const Contact = () => {
                           Sat: 9:00 AM – 1:00 PM
                         </p>
                       </div>
+                    </div>
+                    <div className="border-t pt-4">
+                      <a 
+                        href="/Hace Insurance -Business Profile.pdf" 
+                        download 
+                        className="inline-flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Download className="h-4 w-4" />
+                        <span>Download Business Profile</span>
+                      </a>
                     </div>
                   </div>
                 </div>
