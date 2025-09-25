@@ -5,7 +5,7 @@ import haceLogoImage from '@/assets/hace-logo.png';
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: '#003399' }} className="text-white">
+    <footer style={{ backgroundColor: '#d9d9d9', color: '#101010' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom section */}
-        <div className="mt-8 pt-8 border-t border-white/20">
+        <div className="mt-8 pt-8 border-t" style={{ borderColor: '#101010' }}>
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm opacity-80">
               <p>&copy; 2025 Hace Insurance Agency Limited. All rights reserved.</p>
