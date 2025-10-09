@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Award, Globe, ArrowRight, CheckCircle } from 'lucide-react';
 import Layout from '../components/Layout';
+import PartnersScroll from '../components/PartnersScroll';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   const services = [
@@ -47,7 +49,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
               <span className="text-blue-600">Insure Now To Be Sure</span>
             </h1>
@@ -102,7 +104,7 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="card-elegant p-6 text-center group">
+              <div key={index} className="card-elegant p-6 text-center group hover-scale animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="h-8 w-8 text-primary" />
                 </div>
@@ -131,10 +133,10 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-heading mb-6">
-                About Hace Insurance Agency
+                About Hace Insurance
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Established on December 28, 2020, Hace Insurance Agency Limited is a premier 
+                Established on December 28, 2020, Hace Insurance Limited is a premier
                 insurance consultancy firm led by highly experienced executives from the insurance industry.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
@@ -171,12 +173,18 @@ const Home = () => {
               <h3 className="text-2xl font-bold text-heading mb-6">Our Vision</h3>
               <p className="text-lg text-muted-foreground">
                 To establish unparalleled service standards that drive market growth and 
-                position Hace Insurance Agency as a pillar in Kenya's insurance industry.
+                position Hace Insurance as a pillar in Kenya's insurance industry.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Partners Section */}
+      <PartnersScroll />
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary">

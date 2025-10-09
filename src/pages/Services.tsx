@@ -146,7 +146,7 @@ const Services = () => {
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
               <span className="text-corporate">Our Insurance Services</span>
             </h1>
@@ -172,7 +172,7 @@ const Services = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {generalInsurance.map((service, index) => (
-              <div key={index} className="card-elegant p-6 text-center group">
+              <div key={index} className="card-elegant p-6 text-center group hover-scale animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="h-8 w-8 text-primary" />
                 </div>

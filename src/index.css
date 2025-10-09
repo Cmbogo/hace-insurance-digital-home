@@ -164,4 +164,61 @@
   .text-gold {
     @apply text-[hsl(var(--gold))];
   }
+  
+  /* Partners Scroll Animation */
+  .partners-scroll-container {
+    @apply relative w-full;
+  }
+  
+  .partners-scroll-track {
+    @apply flex gap-12;
+    animation: scroll 40s linear infinite;
+  }
+  
+  .partner-logo-wrapper {
+    @apply flex items-center justify-center flex-shrink-0 px-8;
+    min-width: 200px;
+  }
+  
+  .partner-logo {
+    @apply h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .partners-scroll-container:hover .partners-scroll-track {
+    animation-play-state: paused;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+  
+  /* Hover Scale */
+  .hover-scale {
+    @apply transition-transform duration-300;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
 }

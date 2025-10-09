@@ -5,6 +5,7 @@ import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { useToast } from '../hooks/use-toast';
+import PaymentDetails from '../components/PaymentDetails';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,15 +19,16 @@ const Contact = () => {
   const { toast } = useToast();
 
   const services = [
-    'Health Insurance',
-    'General Insurance',
-    'Life Assurance',
-    'Pensions',
-    'Motor Insurance',
-    'Property Insurance',
-    'Professional Indemnity',
-    'Business Insurance',
-    'Other'
+    { value: '', label: 'Select a service' },
+    { value: 'health-individual', label: 'Health - Individual / Family' },
+    { value: 'health-group', label: 'Health - Group' },
+    { value: 'general-motor', label: 'General - Motor' },
+    { value: 'general-nonmotor', label: 'General - Non-Motor' },
+    { value: 'life-assurance', label: 'Life - Life Assurance' },
+    { value: 'life-pensions', label: 'Life - Pensions' },
+    { value: 'business-individual', label: 'Business - Individual / SME' },
+    { value: 'business-corporate', label: 'Business - Corporate' },
+    { value: 'others', label: 'Others' }
   ];
 
   const handleInputChange = (
@@ -75,9 +77,9 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
-              Contact <span className="text-corporate">Hace Insurance</span>
+          <div className="text-center animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="text-corporate">Contact Hace Insurance</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Get in touch with our experienced insurance professionals for personalized 
@@ -152,10 +154,9 @@ const Contact = () => {
                       onChange={handleInputChange}
                       className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-background"
                     >
-                      <option value="">Select a service</option>
                       {services.map((service, index) => (
-                        <option key={index} value={service}>
-                          {service}
+                        <option key={index} value={service.value}>
+                          {service.label}
                         </option>
                       ))}
                     </select>
@@ -198,13 +199,18 @@ const Contact = () => {
                 <div className="card-elegant p-6">
                   <h3 className="text-xl font-bold text-heading mb-4">Contact Details</h3>
                   <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                    <div className="flex items-start space-x-3">
+                      <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium">Phone</p>
-                        <a href="tel:+254791623183" className="text-primary hover:underline">
-                          +254 791 623 183
-                        </a>
+                        <p className="font-medium mb-1">Phone</p>
+                        <div className="space-y-1">
+                          <a href="tel:+254791623183" className="text-primary hover:underline block">
+                            +254 791 623 183
+                          </a>
+                          <a href="tel:+254721983365" className="text-primary hover:underline block">
+                            +254 721 983 365
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -219,10 +225,9 @@ const Contact = () => {
                     <div className="flex items-start space-x-3">
                       <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium mb-2">Office Locations</p>
+                        <p className="font-medium mb-2">Office Location</p>
                         <div className="space-y-2 text-sm text-muted-foreground">
-                          <p>Avalon (Family Bank) Building<br />5th Floor, Ngong Road<br />Nairobi, Kenya</p>
-                          <p>Haven Court<br />Ground Floor, Waiyaki Way<br />Nairobi, Kenya</p>
+                          <p>Haven Court, First Floor<br />Waiyaki Way<br />Nairobi, Kenya</p>
                         </div>
                       </div>
                     </div>
@@ -268,6 +273,8 @@ const Contact = () => {
                   </div>
                 </div>
 
+                <PaymentDetails />
+
               </div>
             </div>
           </div>
@@ -284,13 +291,22 @@ const Contact = () => {
             For urgent claims or emergency assistance, contact us immediately. 
             Our team is ready to help when you need us most.
           </p>
-          <a
-            href="tel:+254791623183"
-            className="bg-white text-corporate hover:bg-white/90 transition-all duration-300 font-medium px-8 py-4 rounded-md inline-flex items-center text-lg"
-          >
-            <Phone className="mr-3 h-6 w-6" />
-            Call Emergency Line
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+254791623183"
+              className="bg-white text-corporate hover:bg-white/90 transition-all duration-300 font-medium px-8 py-4 rounded-md inline-flex items-center text-lg"
+            >
+              <Phone className="mr-3 h-6 w-6" />
+              +254 791 623 183
+            </a>
+            <a
+              href="tel:+254721983365"
+              className="bg-white text-corporate hover:bg-white/90 transition-all duration-300 font-medium px-8 py-4 rounded-md inline-flex items-center text-lg"
+            >
+              <Phone className="mr-3 h-6 w-6" />
+              +254 721 983 365
+            </a>
+          </div>
         </div>
       </section>
     </Layout>

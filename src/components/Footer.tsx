@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src={haceLogoImage} 
-                alt="Hace Insurance Agency Limited" 
+                alt="Hace Insurance Limited" 
                 className="h-12 w-auto"
               />
               <div>
@@ -69,8 +69,7 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Avalon (Family Bank) Building, 5th Floor, Ngong Road, Nairobi</p>
-                  <p className="mt-1">Haven Court, Ground Floor, Waiyaki Way, Nairobi</p>
+                  <p>Haven Court, First Floor, Waiyaki Way, Nairobi</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2">
@@ -88,7 +87,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t" style={{ borderColor: '#101010' }}>
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm opacity-80">
-              <p>&copy; 2025 Hace Insurance Agency Limited. All rights reserved.</p>
+              <p>&copy; 2025 Hace Insurance Limited. All rights reserved.</p>
               <p className="text-xs mt-1">Licensed by the Insurance Regulatory Authority (IRA) of Kenya</p>
             </div>
             <div className="text-sm opacity-80">

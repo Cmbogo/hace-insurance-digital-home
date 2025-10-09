@@ -43,12 +43,12 @@ const Navigation = () => {
             <Link to="/" className="flex items-center space-x-3">
               <img 
                 src={haceLogoImage} 
-                alt="Hace Insurance Agency Limited" 
+                alt="Hace Insurance Limited" 
                 className="h-10 w-auto"
               />
               <div className="hidden sm:block">
                 <div className="text-lg font-bold text-corporate">
-                  Hace Insurance Agency
+                  Hace Insurance
                 </div>
                 <div className="text-xs text-muted-foreground">
                   Insure Now To Be Sure

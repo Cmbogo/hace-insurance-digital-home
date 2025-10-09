@@ -57,7 +57,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-corporate mb-6">
               About Hace Insurance
             </h1>
@@ -78,7 +78,7 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Hace Insurance Agency Limited was established on December 28, 2020, in response 
+                Hace Insurance Limited was established on December 28, 2020, in response
                 to a growing demand for professional, locally experienced insurance advisors who 
                 provide impartial and customized insurance solutions.
               </p>
@@ -140,7 +140,7 @@ const About = () => {
               </div>
               <p className="text-lg text-muted-foreground">
                 To establish unparalleled service standards that drive market growth and 
-                position Hace Insurance Agency as a pillar in Kenya's insurance industry.
+                position Hace Insurance as a pillar in Kenya's insurance industry.
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="card-elegant p-6 text-center group">
+              <div key={index} className="card-elegant p-6 text-center group hover-scale animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
                   <value.icon className="h-8 w-8 text-primary" />
                 </div>
