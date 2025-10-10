@@ -181,7 +181,7 @@
   }
   
   .partner-logo {
-    @apply h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100;
+    @apply h-16 w-auto object-contain hover:grayscale transition-all duration-300;
   }
   
   @keyframes scroll {

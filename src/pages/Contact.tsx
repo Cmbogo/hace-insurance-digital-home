@@ -18,17 +18,41 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const services = [
-    { value: '', label: 'Select a service' },
-    { value: 'health-individual', label: 'Health - Individual / Family' },
-    { value: 'health-group', label: 'Health - Group' },
-    { value: 'general-motor', label: 'General - Motor' },
-    { value: 'general-nonmotor', label: 'General - Non-Motor' },
-    { value: 'life-assurance', label: 'Life - Life Assurance' },
-    { value: 'life-pensions', label: 'Life - Pensions' },
-    { value: 'business-individual', label: 'Business - Individual / SME' },
-    { value: 'business-corporate', label: 'Business - Corporate' },
-    { value: 'others', label: 'Others' }
+  const serviceCategories = [
+    {
+      category: 'Health',
+      options: [
+        { value: 'health-individual', label: 'Individual / Family' },
+        { value: 'health-group', label: 'Group' }
+      ]
+    },
+    {
+      category: 'General',
+      options: [
+        { value: 'general-motor', label: 'Motor' },
+        { value: 'general-nonmotor', label: 'Non-Motor' }
+      ]
+    },
+    {
+      category: 'Life',
+      options: [
+        { value: 'life-assurance', label: 'Life Assurance' },
+        { value: 'life-pensions', label: 'Pensions' }
+      ]
+    },
+    {
+      category: 'Business',
+      options: [
+        { value: 'business-individual', label: 'Individual / SME' },
+        { value: 'business-corporate', label: 'Corporate' }
+      ]
+    },
+    {
+      category: 'Others',
+      options: [
+        { value: 'others', label: 'Others' }
+      ]
+    }
   ];
 
   const handleInputChange = (
@@ -154,10 +178,15 @@ const Contact = () => {
                       onChange={handleInputChange}
                       className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-background"
                     >
-                      {services.map((service, index) => (
-                        <option key={index} value={service.value}>
-                          {service.label}
-                        </option>
+                      <option value="">Select a service</option>
+                      {serviceCategories.map((category, catIndex) => (
+                        <optgroup key={catIndex} label={category.category}>
+                          {category.options.map((option, optIndex) => (
+                            <option key={optIndex} value={option.value}>
+                              {option.label}
+                            </option>
+                          ))}
+                        </optgroup>
                       ))}
                     </select>
                   </div>

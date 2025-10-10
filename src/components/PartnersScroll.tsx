@@ -9,6 +9,9 @@ import apaLogo from '@/assets/partners/apa.png';
 import aarLogo from '@/assets/partners/aar.png';
 import jubileeLogo from '@/assets/partners/jubilee.png';
 import cicLogo from '@/assets/partners/cic.png';
+import britam2Logo from '@/assets/partners/britam-2.png';
+import cignaLogo from '@/assets/partners/cigna.webp';
+import pioneerLogo from '@/assets/partners/pioneer.jpg';
 
 const PartnersScroll = () => {
   const partners = [
@@ -22,6 +25,9 @@ const PartnersScroll = () => {
     { name: 'AAR Insurance', logo: aarLogo },
     { name: 'Jubilee Insurance', logo: jubileeLogo },
     { name: 'CIC Africa', logo: cicLogo },
+    { name: 'Britam', logo: britam2Logo },
+    { name: 'Cigna', logo: cignaLogo },
+    { name: 'Pioneer Insurance', logo: pioneerLogo },
   ];
 
   // Duplicate the array for seamless loop
