@@ -130,21 +130,21 @@ const GetInsurance = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {product.subCategories.map((subCat, subIndex) => (
                 <div
                   key={subIndex}
                   id={`${product.id}-${subIndex}`}
-                  className="card-elegant p-8 hover-scale"
+                  className="card-elegant p-8 hover-scale flex flex-col"
                 >
-                  <h3 className="text-2xl font-bold text-heading mb-4">
+                  <h3 className="text-2xl font-bold text-heading mb-4 text-center">
                     {subCat.name}
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-muted-foreground mb-6 text-center">
                     {subCat.description}
                   </p>
                   
-                  <div className="mb-6">
+                  <div className="mb-6 flex-grow">
                     <h4 className="font-semibold text-foreground mb-3">Key Benefits:</h4>
                     <ul className="space-y-2">
                       {subCat.benefits.map((benefit, bIndex) => (
@@ -156,11 +156,13 @@ const GetInsurance = () => {
                     </ul>
                   </div>
 
-                  <Link to="/contact">
-                    <AnimatedButton>
-                      Get Free Quote
-                    </AnimatedButton>
-                  </Link>
+                  <div className="text-center">
+                    <Link to="/contact">
+                      <AnimatedButton>
+                        Get Free Quote
+                      </AnimatedButton>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>

@@ -172,7 +172,7 @@
   
   .partners-scroll-track {
     @apply flex gap-12;
-    animation: scroll 40s linear infinite;
+    animation: scroll 80s linear infinite;
   }
   
   .partner-logo-wrapper {

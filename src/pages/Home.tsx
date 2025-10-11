@@ -141,52 +141,66 @@ const Home = () => {
       {/* About Section */}
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-heading mb-6">
-                About Hace Insurance
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Established on December 28, 2020, Hace Insurance Limited is a premier
-                insurance consultancy firm led by highly experienced executives from the insurance industry.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8">
-                We specialize in Commercial and Personal Insurance, covering Property, Casualty, 
-                and Life insurance for diverse clients, including individuals, SMEs, corporations, 
-                government institutions, and NGOs.
-              </p>
-              
-              <div className="space-y-3 mb-8">
-                <h3 className="text-xl font-bold text-heading">Our Core Values</h3>
-                <div className="grid grid-cols-1 gap-2">
-                  {values.map((value, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                      <span className="text-foreground">{value}</span>
-                    </div>
-                  ))}
-                </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-6">
+              About Hace Insurance
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
+              Established on December 28, 2020, Hace Insurance Limited is a premier
+              insurance consultancy firm led by highly experienced executives from the insurance industry.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+              We specialize in Commercial and Personal Insurance, covering Property, Casualty, 
+              and Life insurance for diverse clients, including individuals, SMEs, corporations, 
+              government institutions, and NGOs.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="card-elegant p-8">
+              <div className="mb-6">
+                <img 
+                  src={familyImage} 
+                  alt="Protected family" 
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
               </div>
-              
-              <Link to="/about" className="btn-corporate inline-flex items-center">
-                Learn More About Us
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              <h3 className="text-2xl font-bold text-heading mb-6 text-center">Our Core Values</h3>
+              <div className="grid grid-cols-1 gap-3">
+                {values.map((value, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">{value}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             
             <div className="card-elegant p-8">
-              <h3 className="text-2xl font-bold text-heading mb-6">Our Mission</h3>
-              <p className="text-lg text-muted-foreground mb-6">
-                To be a leader in insurance consultancy and service administration by 
-                delivering tailored, top-tier insurance solutions.
-              </p>
+              <h3 className="text-2xl font-bold text-heading mb-6 text-center">Our Mission & Vision</h3>
+              <div className="mb-6">
+                <h4 className="text-xl font-semibold text-heading mb-3">Mission</h4>
+                <p className="text-lg text-muted-foreground">
+                  To be a leader in insurance consultancy and service administration by 
+                  delivering tailored, top-tier insurance solutions.
+                </p>
+              </div>
               
-              <h3 className="text-2xl font-bold text-heading mb-6">Our Vision</h3>
-              <p className="text-lg text-muted-foreground">
-                To establish unparalleled service standards that drive market growth and 
-                position Hace Insurance as a pillar in Kenya's insurance industry.
-              </p>
+              <div>
+                <h4 className="text-xl font-semibold text-heading mb-3">Vision</h4>
+                <p className="text-lg text-muted-foreground">
+                  To establish unparalleled service standards that drive market growth and 
+                  position Hace Insurance as a pillar in Kenya's insurance industry.
+                </p>
+              </div>
             </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link to="/about" className="btn-corporate inline-flex items-center">
+              Learn More About Us
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>
