@@ -84,7 +84,7 @@ const Navigation = () => {
               className="btn-primary inline-flex items-center"
             >
               <Phone className="h-4 w-4 mr-2" />
-              Get in Touch
+              Request Quote
             </Link>
           </div>
         </div>
