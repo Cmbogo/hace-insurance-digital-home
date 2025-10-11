@@ -12,9 +12,12 @@ import {
   Briefcase, 
   FileText,
   Phone,
-  ArrowRight
+  ArrowRight,
+  CheckCircle
 } from 'lucide-react';
 import Layout from '../components/Layout';
+import QuoteRequestSection from '../components/QuoteRequestSection';
+import businessImage from '@/assets/business-professional.jpg';
 
 const Services = () => {
   const generalInsurance = [
@@ -308,33 +311,43 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Quote Request Section */}
+      <QuoteRequestSection />
+
       {/* Professional Account Management */}
-      <section className="py-16 md:py-24 bg-corporate">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <div className="animate-fade-in">
+              <img 
+                src={businessImage} 
+                alt="Professional insurance consultant" 
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="animate-fade-in">
+              <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
                 Professional Account Management (PAM)
               </h2>
-              <p className="text-xl text-white/90 mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 Our structured approach ensures exceptional client service, efficient claims management, 
                 and proactive risk identification and mitigation.
               </p>
-              <Link to="/contact" className="bg-white text-corporate hover:bg-white/90 transition-all duration-300 font-medium px-8 py-4 rounded-md inline-flex items-center">
-                Learn More About PAM
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </div>
-            
-            <div className="bg-white/10 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Benefits for Our Clients</h3>
+              
               <div className="space-y-4">
                 {pamBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <Shield className="h-6 w-6 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-white/90">{benefit}</span>
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">{benefit}</p>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-8">
+                <Link to="/contact" className="btn-corporate inline-flex items-center">
+                  Learn More About PAM
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </div>
             </div>
           </div>

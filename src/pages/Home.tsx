@@ -4,6 +4,9 @@ import { Shield, Users, Award, Globe, ArrowRight, CheckCircle } from 'lucide-rea
 import Layout from '../components/Layout';
 import PartnersScroll from '../components/PartnersScroll';
 import Testimonials from '../components/Testimonials';
+import QuoteRequestSection from '../components/QuoteRequestSection';
+import heroImage from '@/assets/hero-diverse-team.jpg';
+import familyImage from '@/assets/family-protected.jpg';
 
 const Home = () => {
   const services = [
@@ -47,8 +50,16 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="hero-gradient py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative hero-gradient py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroImage} 
+            alt="Diverse team of insurance professionals" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-heading mb-6">
               <span className="text-blue-600">Insure Now To Be Sure</span>
@@ -182,6 +193,9 @@ const Home = () => {
 
       {/* Partners Section */}
       <PartnersScroll />
+
+      {/* Quote Request Section */}
+      <QuoteRequestSection />
 
       {/* Testimonials Section */}
       <Testimonials />

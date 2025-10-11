@@ -6,6 +6,8 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { useToast } from '../hooks/use-toast';
 import PaymentDetails from '../components/PaymentDetails';
+import QuoteRequestSection from '../components/QuoteRequestSection';
+import familyImage from '@/assets/family-protected.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -99,11 +101,19 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="hero-gradient py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative hero-gradient py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={familyImage} 
+            alt="Protected family" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-corporate">Contact Hace Insurance</span>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-corporate">
+              Contact Hace Insurance
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Get in touch with our experienced insurance professionals for personalized 
@@ -309,6 +319,9 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Quote Request Section */}
+      <QuoteRequestSection />
 
       {/* Emergency Contact */}
       <section className="py-16 bg-corporate">

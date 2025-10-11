@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Globe } from 'lucide-react';
+import { Phone, Mail, MapPin, Globe, Linkedin, Facebook, Instagram, Twitter } from 'lucide-react';
 import haceLogoImage from '@/assets/hace-logo.png';
 
 const Footer = () => {
@@ -46,6 +46,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-opacity-80 transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-opacity-80 transition-colors">About Us</Link></li>
               <li><Link to="/services" className="hover:text-opacity-80 transition-colors">Our Services</Link></li>
+              <li><Link to="/get-insurance" className="hover:text-opacity-80 transition-colors">Get Insurance</Link></li>
               <li><Link to="/contact" className="hover:text-opacity-80 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
@@ -83,8 +84,47 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom section */}
+        {/* Social Media */}
         <div className="mt-8 pt-8 border-t" style={{ borderColor: '#101010' }}>
+          <div className="flex justify-center space-x-6 mb-6">
+            <a 
+              href="https://www.linkedin.com/company/haceinsuranceagencylimited/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6" />
+            </a>
+            <a 
+              href="https://web.facebook.com/profile.php?id=61582341052805" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-6 w-6" />
+            </a>
+            <a 
+              href="https://www.instagram.com/haceinsurance/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-6 w-6" />
+            </a>
+            <a 
+              href="https://x.com/haceinsurance" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="X (Twitter)"
+            >
+              <Twitter className="h-6 w-6" />
+            </a>
+          </div>
+
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm opacity-80">
               <p>&copy; 2025 Hace Insurance Limited. All rights reserved.</p>
