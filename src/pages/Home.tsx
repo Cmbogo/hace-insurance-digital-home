@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Shield, Users, Award, Globe, ArrowRight, CheckCircle } from 'lucide-react';
 import Layout from '../components/Layout';
 import PartnersScroll from '../components/PartnersScroll';
+import ClientsScroll from '../components/ClientsScroll';
 import Testimonials from '../components/Testimonials';
 import QuoteRequestSection from '../components/QuoteRequestSection';
 import SEO from '../components/SEO';
@@ -214,6 +215,9 @@ const Home = () => {
 
       {/* Partners Section */}
       <PartnersScroll />
+
+      {/* Clients Section */}
+      <ClientsScroll />
 
       {/* Quote Request Section */}
       <QuoteRequestSection />
