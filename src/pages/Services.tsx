@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import Layout from '../components/Layout';
 import QuoteRequestSection from '../components/QuoteRequestSection';
+import SEO from '../components/SEO';
 import businessImage from '@/assets/business-professional.jpg';
 
 const Services = () => {
@@ -146,6 +147,12 @@ const Services = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Insurance Services - Health, General, Life & Business Insurance | Hace Insurance"
+        description="Comprehensive insurance services in Kenya: Health, Motor, Property, Marine, Life, Pensions, Professional Indemnity, WIBA, and specialized coverage. Licensed by IRA Kenya."
+        canonical="/services"
+        keywords="insurance services Kenya, motor insurance, health insurance, life insurance, WIBA, professional indemnity, marine insurance"
+      />
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

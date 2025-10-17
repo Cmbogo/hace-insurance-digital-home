@@ -2,6 +2,7 @@ import React from 'react';
 import { Shield, Users, Car, Heart, Building, FileText } from 'lucide-react';
 import Layout from '../components/Layout';
 import AnimatedButton from '../components/ui/animated-button';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 
 const GetInsurance = () => {
@@ -95,6 +96,12 @@ const GetInsurance = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Get Insurance - Health, General, Life & Business Coverage | Hace Insurance"
+        description="Get comprehensive insurance coverage in Kenya. Health insurance for individuals & groups, motor & non-motor insurance, life assurance, pensions, and business insurance solutions."
+        canonical="/get-insurance"
+        keywords="get insurance Kenya, health insurance quotes, motor insurance Kenya, life assurance, business insurance, pension plans Kenya"
+      />
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

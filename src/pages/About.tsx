@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, Users, Globe, Shield, CheckCircle, Target, Eye, Heart } from 'lucide-react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const About = () => {
   const values = [
@@ -54,6 +55,12 @@ const About = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="About Hace Insurance - Leading Insurance Consultancy in Kenya"
+        description="Established in 2020, Hace Insurance Limited is a premier insurance consultancy firm led by experienced executives. Licensed by IRA Kenya, serving East Africa with professional insurance solutions."
+        canonical="/about"
+        keywords="insurance consultancy Kenya, IRA licensed, East Africa insurance, professional insurance services"
+      />
       {/* Hero Section */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

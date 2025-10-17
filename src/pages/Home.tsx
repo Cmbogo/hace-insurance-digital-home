@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import PartnersScroll from '../components/PartnersScroll';
 import Testimonials from '../components/Testimonials';
 import QuoteRequestSection from '../components/QuoteRequestSection';
+import SEO from '../components/SEO';
 import heroImage from '@/assets/hero-diverse-team.jpg';
 import familyImage from '@/assets/family-protected.jpg';
 
@@ -49,6 +50,12 @@ const Home = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Hace Insurance - Health, General, Life Insurance & Pensions in Kenya"
+        description="Premier insurance consultancy firm in Kenya offering Health Insurance, General Insurance, Life Assurance & Pensions. Licensed by IRA Kenya with regional coverage across East Africa."
+        canonical="/"
+        keywords="insurance Kenya, health insurance, life insurance, general insurance, pensions, IRA licensed"
+      />
       {/* Hero Section */}
       <section className="relative hero-gradient py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">

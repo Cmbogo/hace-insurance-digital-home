@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Download } from 'lucide-react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
@@ -100,6 +101,12 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Contact Hace Insurance - Get Your Free Insurance Quote Today"
+        description="Contact Hace Insurance for personalized insurance solutions in Kenya. Get free quotes for health, motor, life, and business insurance. Call +254791623183 or visit our Nairobi office."
+        canonical="/contact"
+        keywords="contact insurance Kenya, insurance quote, Hace Insurance contact, insurance consultation Kenya, Nairobi insurance"
+      />
       {/* Hero Section */}
       <section className="relative hero-gradient py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
