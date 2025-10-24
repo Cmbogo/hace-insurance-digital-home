@@ -30,7 +30,7 @@ const ClientsScroll = () => {
   return (
     <section className="py-12 bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center">
-        <h2 className="text-3xl font-bold text-heading">Trusted By</h2>
+        <h2 className="text-3xl font-bold text-heading">The companies we protect</h2>
         <p className="text-muted-foreground mt-2">Leading organizations that trust us with their insurance needs</p>
       </div>
       
