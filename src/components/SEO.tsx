@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, canonical, keywords }: SEOProps) => {
-  const baseUrl = 'https://haceinsurance.co.ke';
+  const baseUrl = import.meta.env.VITE_SITE_URL || 'https://haceinsurance.co.ke';
   const fullCanonical = canonical ? `${baseUrl}${canonical}` : baseUrl;
 
   return (

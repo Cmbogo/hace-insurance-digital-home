@@ -1,1 +1,5 @@
+# Redirect Netlify subdomain to primary domain
+https://hace-insurace-agency.netlify.app/*  https://haceinsurance.co.ke/:splat  301!
+
+# SPA fallback
 /*    /index.html   200
