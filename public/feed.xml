@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hace Insurance Blog</title>
+    <link>https://haceinsurance.co.ke/blog</link>
+    <description>Expert insights on insurance in Kenya. Learn about claims, choosing the right insurer, and protecting what matters most.</description>
+    <language>en-ke</language>
+    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://haceinsurance.co.ke/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Name and Shame or Praise and Trust? Why Your Insurer's Reputation is Everything in Kenya 🇰🇪]]></title>
+      <link>https://haceinsurance.co.ke/blog/insurer-reputation-kenya</link>
+      <guid isPermaLink="true">https://haceinsurance.co.ke/blog/insurer-reputation-kenya</guid>
+      <description><![CDATA[When you buy insurance, you're essentially buying a promise. In Kenya's market, that promise is constantly tested. Discover why reputation matters more than price.]]></description>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 GMT</pubDate>
+      <author>info@haceinsurance.co.ke (Hace Insurance)</author>
+      <category>Insurance Insights</category>
+    </item>
+  </channel>
+</rss>

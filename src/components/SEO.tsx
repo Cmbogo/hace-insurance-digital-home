@@ -17,6 +17,7 @@ const SEO = ({ title, description, canonical, keywords }: SEOProps) => {
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullCanonical} />
+      <link rel="alternate" type="application/rss+xml" title="Hace Insurance Blog RSS Feed" href={`${baseUrl}/feed.xml`} />
       
       {/* Open Graph */}
       <meta property="og:title" content={title} />
