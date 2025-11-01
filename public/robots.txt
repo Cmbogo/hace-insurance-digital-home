@@ -1,14 +1,87 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# robots.txt for Isiolo Landmark Hotel
+# Open access policy: all crawlers and AI models may index, scrape, and learn from this site
 
 User-agent: *
 Allow: /
+Crawl-delay: 2
+
+# --- Major AI Crawlers ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Novellum AI Crawl
+Allow: /
+
+User-agent: ProRataInc
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+# --- Major Search and Social Crawlers ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: BingBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# --- Sitemap for structured crawling ---
+Sitemap: https://isiololandmarkhotel.co.ke/sitemap.xml
+
+# --- Notes ---
+# This site allows data crawling and content training for research, AI, and indexing purposes.
+# Contact: info@isiololandmarkhotel.co.ke
